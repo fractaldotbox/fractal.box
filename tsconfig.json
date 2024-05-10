@@ -1,0 +1,39 @@
+{
+  "extends": "@wordquest/tsconfig",
+  "compilerOptions": {
+    "allowJs": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": false,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "pedialab-shared/*": [
+        "shared/*"
+      ],
+      "pedialab-pages/*": [
+        "page-container/*"
+      ],
+    },
+    "lib": [
+      "DOM",
+      "es2020",
+      "esnext.asynciterable"
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "**/*.ttf"
+  ]
+}

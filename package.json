@@ -1,0 +1,66 @@
+{
+  "name": "fractal.box",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://fractal.box",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next build && next-sitemap && next export",
+    "lint": "eslint .",
+    "test": "jest .",
+    "storybook": "start-storybook -p 6006 -s ./public",
+    "build-storybook": "build-storybook"
+  },
+  "pedialab": {
+    "caseStudySource": "case-study-source",
+    "contactFormEndpoint": "https://n8n.perapera.ai/webhook/pedialab-form"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/runtime": "^7.14.0",
+    "@mdx-js/react": "^1.6.22",
+    "@next/env": "^10.2.0",
+    "@types/jest": "^26.0.23",
+    "@types/node": "^15.0.2",
+    "@types/react": "^17.0.5",
+    "@typescript-eslint/eslint-plugin": "^4.22.1",
+    "@typescript-eslint/parser": "^4.22.1",
+    "@wordquest/tsconfig": "^1.0.3",
+    "babel-loader": "^8.2.2",
+    "eslint": "^7.26.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-import-resolver-node": "^0.3.4",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "jest": "^26.6.3",
+    "next-sitemap": "^1.6.57",
+    "tsconfig-paths-webpack-plugin": "^3.5.1",
+    "typescript": "^4.2.4"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@storybook/addon-actions": "^6.2.9",
+    "@storybook/addon-docs": "^6.2.9",
+    "@storybook/addon-essentials": "^6.2.9",
+    "@storybook/addon-links": "^6.2.9",
+    "@storybook/react": "^6.2.9",
+    "gray-matter": "^4.0.3",
+    "next": "^10.2.0",
+    "next-fonts": "^1.5.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "remark-parse": "^9.0.0",
+    "remark-react": "^8.0.0",
+    "rxjs": "^7.0.0",
+    "unified": "^9.2.1"
+  },
+  "dependenciesMeta": {
+    "open@7.4.2": {
+      "unplugged": true
+    }
+  }
+}
