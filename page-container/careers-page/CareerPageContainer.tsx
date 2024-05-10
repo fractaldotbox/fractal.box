@@ -59,7 +59,7 @@ const CareerPage = () => {
         <Grid container direction="column" alignItems="center">
           <Grid item className={classes.title}>
             <Typography variant="h2" color="primary">
-              Join Pedia Lab
+              Join Fractal Labs
             </Typography>
           </Grid>
           <Grid item container className={classes.linkContainer} justify="center">

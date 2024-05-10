@@ -27,22 +27,22 @@ const OurCompany = ({ className }: Partial<{ className: string }>) => {
     <Grid container direction="column" component="article" className={className} id="our-company">
 
       <Typography component="h3" variant="h2" color="primary">
-          The Pedia Lab
-          Difference
-        </Typography>
-        <br />
-        <Typography component="p" variant="body1" color="secondary">
-          Why employ Tech Lead as a service to grow together instead of just outsourcing?
-        </Typography>
-        <Grid item className={classes.imageContainer}>
-          <img src="/our_company_img.svg" width="415" height="361" alt="our company introduction logo" />
-     
-        </Grid>
-         
-        <Grid item className={classes.imageContainer}>
-     
-        </Grid>
-  
+        The Fractal Labs
+        Difference
+      </Typography>
+      <br />
+      <Typography component="p" variant="body1" color="secondary">
+        Why employ Tech Lead as a service to grow together instead of just outsourcing?
+      </Typography>
+      <Grid item className={classes.imageContainer}>
+        <img src="/fractal_labs.png" width="415" height="361" alt="our company introduction logo" />
+
+      </Grid>
+
+      <Grid item className={classes.imageContainer}>
+
+      </Grid>
+
       <Grid item className={classes.textContainer}>
         <Typography variant="body1" color="secondary">
           We are a team of ex-startup founders & tech-leads, who understand both the power of technology and trade-offs to make in fast paced startups or

@@ -10,14 +10,19 @@ const content = {
     </Typography>
   ),
   brands: [
-    { name: 'Yahoo!', logoSrc: '/logo_yahoo.png' },
-    { name: 'J.P.Morgan', logoSrc: '/logo_jp.png' },
 
-    { name: 'HK01', logoSrc: '/logo_hongkong01.png' },
-    { name: 'Oursky', logoSrc: '/logo_oursky.png' },
-    { name: 'Entrepreneur First', logoSrc: '/logo_entrepreneur-first.png' },
+    { name: 'Animoca Brands', logoSrc: '/logo_ab.png' },
+    { name: 'LiquidX studio', logoSrc: '/logo_lx.svg' },
+    {
+      name: 'PALO IT',
+      logoSrc: '/logo_palo_it.png'
+    },
+    {
+      name: 'Bowtie',
+      logoSrc: '/logo_bowtie.jpg'
+    },
     { name: 'StockViva', logoSrc: '/logo_sv.png' },
-    { name: 'House News', logoSrc: '/logo_house_news.png' },
+    { name: 'Gritus', logoSrc: '/logo_gritus.png' },
     { name: 'SpaceShip', logoSrc: '/logo_spaceship.png' },
     { name: 'Developer Circles from Facebook', logoSrc: '/logo_fb_dev_cir.png' }
   ]
@@ -27,16 +32,21 @@ const members = [
   {
     avatarSrc: '/avatar_vincent.jpg',
     name: 'Vincent Lau',
+    position: 'Founding Partner'
+  },
+  {
+    avatarSrc: '/avatar_ken.jpg',
+    name: 'Ken Yiu',
     position: 'Partner'
   },
   {
-    avatarSrc: '/avatar_keung.jpg',
-    name: 'Keung Ho',
+    avatarSrc: '/avatar_justin.jpg',
+    name: 'Justin Lau',
     position: 'Partner'
   },
   {
-    avatarSrc: '/avatar_roger.jpg',
-    name: 'Roger Ho',
+    avatarSrc: '/avatar_brian.jpg',
+    name: 'Brian Wong',
     position: 'Partner'
   }
 ];

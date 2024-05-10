@@ -13,8 +13,8 @@ const content = {
       'Your budget is spent on their sales and middle management.'
     ]
   },
-  pedialab: {
-    title: 'Pedia Lab',
+  fractal: {
+    title: 'Fractal Labs',
     lists: [
       'We’re experienced startup founders and tech-lead that you can count on, committed to work with your team.',
       'Day to day you gain insights in technology related to your product and stay on top of the game.',
@@ -111,9 +111,9 @@ const VendorDifference = ({ className }: Partial<{ className: string }>) => {
         </Grid>
         <Grid component="section" className={classes.secondSection} item container wrap="nowrap" justify="space-evenly" lg={6} xs={12}>
           <Typography variant="h3" color="textPrimary">
-            {content.pedialab.title}
+            {content.fractal.title}
           </Typography>
-          <TextList texts={content.pedialab.lists} width="18.4vw" />
+          <TextList texts={content.fractal.lists} width="18.4vw" />
         </Grid>
       </Grid>
       <Grid container justify="center">
