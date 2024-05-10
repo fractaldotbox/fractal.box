@@ -18,9 +18,10 @@ jobs:
           version: 8
       - name: copy package.json to public
         run: cp package.json ./public
-
+      - name: Install dependencies
+        run: pnpm install
       - name: Export
-        run: yarn export
+        run: pnpm export
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
