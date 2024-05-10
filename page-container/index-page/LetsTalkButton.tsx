@@ -1,5 +1,5 @@
 import { Grid } from '@material-ui/core';
-import { CommonButton } from 'pedialab-shared/components';
+import { CommonButton } from 'fractal-shared/components';
 
 const LetsTalkButton = ({ className }: Partial<{ className: string }>) => (
   <Grid container justify="center" className={className}>

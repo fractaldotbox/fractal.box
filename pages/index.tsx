@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import IndexPageContainer from 'pedialab-pages/index-page/IndexPageContainer';
+import IndexPageContainer from 'fractal-pages/index-page/IndexPageContainer';
 
 const description = 'Architecting software, teams, companies and dreams';
 

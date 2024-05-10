@@ -1,9 +1,9 @@
 import { GetStaticProps } from 'next';
 import Head from 'next/head';
-import CaseStudiesPageContainer from 'pedialab-pages/case-study-page/CaseStudiesPageContainer';
-import { ArticleCardProps } from 'pedialab-shared/components/ArticleCard';
-import { loadAllMarkdownFileNames, loadMarkdownFile } from 'pedialab-pages/case-study-page/lib-server';
-import { matter } from 'pedialab-pages/case-study-page/lib-iso';
+import CaseStudiesPageContainer from 'fractal-pages/case-study-page/CaseStudiesPageContainer';
+import { ArticleCardProps } from 'fractal-shared/components/ArticleCard';
+import { loadAllMarkdownFileNames, loadMarkdownFile } from 'fractal-pages/case-study-page/lib-server';
+import { matter } from 'fractal-pages/case-study-page/lib-iso';
 
 type Props = { articleCards: ArticleCardProps[] }
 

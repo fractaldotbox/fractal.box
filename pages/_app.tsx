@@ -4,7 +4,7 @@ import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import theme from 'pedialab-shared/theme';
+import theme from 'fractal-shared/theme';
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {

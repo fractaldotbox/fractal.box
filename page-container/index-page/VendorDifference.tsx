@@ -1,7 +1,7 @@
 import {
   Box, Grid, makeStyles, Typography
 } from '@material-ui/core';
-import { TextList } from 'pedialab-shared/components';
+import { TextList } from 'fractal-shared/components';
 import LetsTalkButton from './LetsTalkButton';
 
 const content = {
@@ -97,9 +97,9 @@ const VendorDifference = ({ className }: Partial<{ className: string }>) => {
   return (
     <>
       <Grid container justify="center">
-          <Typography variant="h3" color="primary">
-         Tech Lead as a Service
-          </Typography>
+        <Typography variant="h3" color="primary">
+          Tech Lead as a Service
+        </Typography>
       </Grid>
 
       <Grid component="article" container wrap="nowrap" className={[className, classes.root].join(' ')}>

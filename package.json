@@ -12,10 +12,6 @@
     "storybook": "start-storybook -p 6006 -s ./public",
     "build-storybook": "build-storybook"
   },
-  "pedialab": {
-    "caseStudySource": "case-study-source",
-    "contactFormEndpoint": "https://n8n.perapera.ai/webhook/pedialab-form"
-  },
   "devDependencies": {
     "@babel/core": "^7.14.0",
     "@babel/runtime": "^7.14.0",
@@ -26,7 +22,6 @@
     "@types/react": "^17.0.5",
     "@typescript-eslint/eslint-plugin": "^4.22.1",
     "@typescript-eslint/parser": "^4.22.1",
-    "@wordquest/tsconfig": "^1.0.3",
     "babel-loader": "^8.2.2",
     "eslint": "^7.26.0",
     "eslint-config-airbnb": "^18.2.1",

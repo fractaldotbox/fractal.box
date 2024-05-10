@@ -24,17 +24,7 @@ OurTeam.args = {
   ),
   brands: [
     { name: 'Yahoo!', logoSrc: '/logo_yahoo.png' },
-    { name: 'J.P.Morgan', logoSrc: '/logo_jp.png' },
-    { name: 'HYPEBEAST', logoSrc: '/logo_hypebeast.png' },
-    { name: 'GOGOX', logoSrc: '/logo_gogox.png' },
-    { name: '9GAG', logoSrc: '/logo_9gag.png' },
-    { name: 'HK01', logoSrc: '/logo_hongkong01.png' },
-    { name: 'Oursky', logoSrc: '/logo_oursky.png' },
-    { name: 'Entrepreneur First', logoSrc: '/logo_entrepreneur-first.png' },
-    { name: 'StockViva', logoSrc: '/logo_sv.png' },
-    { name: 'House News', logoSrc: '/logo_house_news.png' },
-    { name: 'SpaceShip', logoSrc: '/logo_spaceship.png' },
-    { name: 'Developer Circles from Facebook', logoSrc: '/logo_fb_dev_cir.png' }
+    { name: 'J.P.Morgan', logoSrc: '/logo_jp.png' }
   ]
 };
 
@@ -57,7 +47,6 @@ CompaniesWeWorkWith.args = {
     { name: 'SpaceShip', logoSrc: '/logo_spaceship.png' },
     { name: 'GOGOX', logoSrc: '/logo_gogox.png' },
     { name: 'JavaScript', logoSrc: '/logo_js.png' },
-    { name: 'HK01', logoSrc: '/logo_hongkong01.png' },
     { name: 'Shaw Brothers Pictures International Limited', logoSrc: '/logo_SB.png' }
   ]
 };

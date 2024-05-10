@@ -1,9 +1,9 @@
 import { GetStaticPaths } from 'next';
 import Head from 'next/head';
 
-import { loadAllMarkdownFileNames, loadMarkdownFile } from 'pedialab-pages/case-study-page/lib-server';
-import { matter } from 'pedialab-pages/case-study-page/lib-iso';
-import { CaseStudyPageContainer } from 'pedialab-pages/case-study-page';
+import { loadAllMarkdownFileNames, loadMarkdownFile } from 'fractal-pages/case-study-page/lib-server';
+import { matter } from 'fractal-pages/case-study-page/lib-iso';
+import { CaseStudyPageContainer } from 'fractal-pages/case-study-page';
 import packageConfig from '../../package.json';
 
 type Params = {

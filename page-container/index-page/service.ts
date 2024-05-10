@@ -1,6 +1,6 @@
 import packageConfig from '../../package.json';
 
-const formPostUrl = packageConfig.pedialab.contactFormEndpoint;
+const formPostUrl = "";
 
 export const postContactForm = async (
   formState: Record<string, string> | null

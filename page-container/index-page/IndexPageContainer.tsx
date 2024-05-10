@@ -1,7 +1,7 @@
 import {
   Box, Grid, makeStyles
 } from '@material-ui/core';
-import { Header, Footer } from 'pedialab-shared/components';
+import { Header, Footer } from 'fractal-shared/components';
 import {
   HeroContent,
   OurCompany,
@@ -18,7 +18,7 @@ import {
   ProjectPhrases,
   Testimonial,
   Contact
-} from 'pedialab-pages/index-page';
+} from 'fractal-pages/index-page';
 
 const useStyle = makeStyles((theme) => ({
   heroContent: {
@@ -134,7 +134,7 @@ const IndexPageContainer = () => {
           <Header isIndexPage />
           <HeroContent className={classes.heroContent} />
           <OurCompany className={classes.ourCompany} />
-        
+
           <ClientCompanies className={classes.clientCompanies} />
           <SoftwareDelivery className={classes.softwareDelivery} />
         </Grid>
@@ -150,7 +150,7 @@ const IndexPageContainer = () => {
         <TeamUpWithTechlead className={classes.teamUpWithTechlead} />
         <DeveloperSupport className={classes.developerSupport} />
         <OurTeam className={classes.ourTeam} />
-      
+
       </Box>
       <Box mr={{ xs: 0, lg: '17%', xl: '30%' }}>
         <WhereWeServe className={classes.whereWeServe} />

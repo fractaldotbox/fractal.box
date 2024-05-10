@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import ThankYouPageContainer from 'pedialab-pages/thank-you-page/ThankYouPageContainer';
+import ThankYouPageContainer from 'fractal-pages/thank-you-page/ThankYouPageContainer';
 
 function CareersPage() {
   return (

@@ -1,7 +1,7 @@
 import {
   Grid, Box, makeStyles, Typography
 } from '@material-ui/core';
-import { TextList } from 'pedialab-shared/components';
+import { TextList } from 'fractal-shared/components';
 
 const useStyles = makeStyles((theme) => ({
   root: {

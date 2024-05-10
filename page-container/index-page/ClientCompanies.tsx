@@ -1,5 +1,5 @@
 import { Typography, Box, makeStyles } from '@material-ui/core';
-import { LogoList } from 'pedialab-shared/components';
+import { LogoList } from 'fractal-shared/components';
 
 const content = {
   title: (

@@ -1,4 +1,4 @@
-import { LogoList, Member } from 'pedialab-shared/components';
+import { LogoList, Member } from 'fractal-shared/components';
 import {
   Typography, Box, Grid, makeStyles
 } from '@material-ui/core';
@@ -12,9 +12,7 @@ const content = {
   brands: [
     { name: 'Yahoo!', logoSrc: '/logo_yahoo.png' },
     { name: 'J.P.Morgan', logoSrc: '/logo_jp.png' },
-    { name: 'HYPEBEAST', logoSrc: '/logo_hypebeast.png' },
-    { name: 'GOGOX', logoSrc: '/logo_gogox.png' },
-    { name: '9GAG', logoSrc: '/logo_9gag.png' },
+
     { name: 'HK01', logoSrc: '/logo_hongkong01.png' },
     { name: 'Oursky', logoSrc: '/logo_oursky.png' },
     { name: 'Entrepreneur First', logoSrc: '/logo_entrepreneur-first.png' },

@@ -4,7 +4,7 @@ import {
   makeStyles,
   Typography
 } from '@material-ui/core';
-import { Header, Footer, CommonButton } from 'pedialab-shared/components';
+import { Header, Footer, CommonButton } from 'fractal-shared/components';
 
 const useStyle = makeStyles((theme) => ({
   title: {

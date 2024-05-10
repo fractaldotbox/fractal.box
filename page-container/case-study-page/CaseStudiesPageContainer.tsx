@@ -1,8 +1,8 @@
 import {
   Box, Grid, makeStyles
 } from '@material-ui/core';
-import { Header, Footer, ArticleCardList } from 'pedialab-shared/components';
-import { ArticleCardProps } from 'pedialab-shared/components/ArticleCard';
+import { Header, Footer, ArticleCardList } from 'fractal-shared/components';
+import { ArticleCardProps } from 'fractal-shared/components/ArticleCard';
 
 const useStyle = makeStyles((theme) => ({
   title: {
@@ -32,7 +32,7 @@ const useStyle = makeStyles((theme) => ({
   }
 }));
 
-const CaseStudiesPage = ({ articleCards }: { articleCards: ArticleCardProps[]}) => {
+const CaseStudiesPage = ({ articleCards }: { articleCards: ArticleCardProps[] }) => {
   const classes = useStyle();
   return (
     <Box mx={{ xs: '5.8%', md: '10%' }}>

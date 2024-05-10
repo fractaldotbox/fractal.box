@@ -1,8 +1,8 @@
 import {
   Box, Grid, makeStyles
 } from '@material-ui/core';
-import { Header, Footer } from 'pedialab-shared/components';
-import { MarkdownArticle } from 'pedialab-pages/case-study-page';
+import { Header, Footer } from 'fractal-shared/components';
+import { MarkdownArticle } from 'fractal-pages/case-study-page';
 
 export type CaseStudyPageProps = {
   title: string;

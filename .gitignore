@@ -1,0 +1,21 @@
+# npm
+node_modules/*
+
+# yarn 2 start zero-install, reference: https://yarnpkg.com/getting-started/qa#which-files-should-be-gitignored
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+# .yarn/sdks is editor specific, reference: https://yarnpkg.com/getting-started/editor-sdks
+.yarn/sdks
+!.yarn/versions
+yarn-error*
+
+# editor specific
+.editorconfig
+.vscode
+.prettierrc.json
+
+# next
+.next/*

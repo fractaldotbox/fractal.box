@@ -1,5 +1,5 @@
 import { Typography, Grid, makeStyles } from '@material-ui/core';
-import { ArticleCardList, CommonButton } from 'pedialab-shared/components';
+import { ArticleCardList, CommonButton } from 'fractal-shared/components';
 
 const articleCards = [
   {

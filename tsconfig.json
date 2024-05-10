@@ -1,5 +1,4 @@
 {
-  "extends": "@wordquest/tsconfig",
   "compilerOptions": {
     "allowJs": true,
     "strict": false,
@@ -14,18 +13,20 @@
     "skipLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "pedialab-shared/*": [
+      "fractal-shared/*": [
         "shared/*"
       ],
-      "pedialab-pages/*": [
+      "fractal-pages/*": [
         "page-container/*"
-      ],
+      ]
     },
     "lib": [
       "DOM",
       "es2020",
       "esnext.asynciterable"
-    ]
+    ],
+    "target": "es2020",
+    "module": "esnext"
   },
   "include": [
     "next-env.d.ts",

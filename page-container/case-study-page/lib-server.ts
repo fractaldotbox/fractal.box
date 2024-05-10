@@ -2,7 +2,7 @@ import fs from 'fs';
 import { join, extname, basename } from 'path';
 import config from '../../package.json';
 
-const caseStudySource = config.pedialab.caseStudySource;
+const caseStudySource = "case-study-source";
 const caseStudiesDir = join(process.cwd(), caseStudySource);
 
 const loadAllMarkdownFileNames = (): string[] => fs
