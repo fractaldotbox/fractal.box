@@ -2,7 +2,7 @@ name: Continuous Deployment
 on:
   push:
     branches:
-      - develop
+      - main
 
 jobs:
   deployment:
