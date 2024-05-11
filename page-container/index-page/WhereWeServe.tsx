@@ -4,7 +4,7 @@ import LetsTalkButton from './LetsTalkButton';
 const content = {
   title: 'WHERE WE SERVE',
   subtitle: 'Remote + On-site Supported ',
-  description: `Our team is located in Hong Kong, Singapore, Taipei and Hanoi.
+  description: `Our team is located in Hong Kong, Singapore, Taipei and Kyoto.
 Experienced UX & Product Designers, Senior Backend Developers, Site Reliability Engineers are ready to work on your project.`
 };
 
