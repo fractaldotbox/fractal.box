@@ -85,15 +85,16 @@ const ContactForm = ({ className }: Partial<{ className: string }>) => {
 
   return (
     <Grid container className={className} direction="column">
-      <Grid item className={classes.title}>
+      {/* <Grid item className={classes.title}>
         <Typography component="p" variant="h3">
           Get in touch with us.
         </Typography>
         <Typography component="p" variant="subtitle1" color="secondary">
           Got a project you&#39;re excited about and think we can help?
         </Typography>
-      </Grid>
-      <Grid
+      </Grid> */}
+
+      {/* <Grid
         component="form"
         className={classes.formRoot}
         onSubmit={handleSubmit}
@@ -168,7 +169,7 @@ const ContactForm = ({ className }: Partial<{ className: string }>) => {
             Submit
           </Button>
         </Grid>
-      </Grid>
+      </Grid> */}
     </Grid>
   );
 };

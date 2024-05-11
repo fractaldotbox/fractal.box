@@ -1,7 +1,7 @@
 import { Typography, Grid, makeStyles } from '@material-ui/core';
 
 const contacts = [
-  { way: 'Email', information: 'hi@fractal.box' },
+  { way: 'Email', information: 'v@fractal.box' },
   { way: 'Phone', information: '+65 8610 9984' }
 ];
 

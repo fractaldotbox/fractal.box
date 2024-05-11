@@ -51,7 +51,7 @@ const Footer = ({ className }: FooterProps) => {
           <br />
           Taiwan Office: 6F., No.180, Sec. 1, Keelung Rd., Xinyi Dist., Taipei City 110, Taiwan (R.O.C.)
           <br />
-          Singapore Office: Mapletree Business City, 20 Pasir Panjang Rd, #03-22/24, 117439
+          Singapore Office: 7 TEMASEK BOULEVARD, #12-07, SUNTEC TOWER ONE, Singapore 038987
         </Typography>
       </Grid>
     </Grid>
