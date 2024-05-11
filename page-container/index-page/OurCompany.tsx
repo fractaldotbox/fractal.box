@@ -35,7 +35,7 @@ const OurCompany = ({ className }: Partial<{ className: string }>) => {
         Why employ Tech Lead as a service to grow together instead of just outsourcing?
       </Typography>
       <Grid item className={classes.imageContainer}>
-        <img src="/fractal_labs.png" width="415" height="361" alt="our company introduction logo" />
+        <img style={{ borderRadius: "99999px", height: "360px", width: "360px" }} src="/logo_fractal_labs.png" width="360" height="360" alt="our company introduction logo" />
 
       </Grid>
 
