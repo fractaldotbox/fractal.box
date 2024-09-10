@@ -157,7 +157,7 @@ const IndexPageContainer = () => {
       </Box>
       <Box mx={{ xs: '5.8%', md: '10%' }}>
         <CaseStudies className={classes.caseStudies} />
-        <ProjectPhrases className={classes.projectPhrases} />
+        {/* <ProjectPhrases className={classes.projectPhrases} /> */}
       </Box>
       <Box mx={{ xs: '5.8%', md: 0 }}>
         <Testimonial className={classes.testimonial} />
