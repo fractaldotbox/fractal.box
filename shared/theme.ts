@@ -1,7 +1,12 @@
 import { createMuiTheme } from '@material-ui/core/styles';
+
+// TODO replace Noto_Sans
+// https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 import NotoSansRegular from '../public/Noto_Sans/NotoSans-Regular.ttf';
 import NotoSansBold from '../public/Noto_Sans/NotoSans-Bold.ttf';
 import NotoSansLight from '../public/Noto_Sans/NotoSans-Light.ttf';
+
+import { Noto_Sans } from 'next/font/google'
 
 let theme = createMuiTheme({
   breakpoints: {
