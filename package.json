@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "export": "NODE_OPTIONS=--openssl-legacy-provider next build && next-sitemap && next export",
+    "export": "NODE_OPTIONS=--openssl-legacy-provider next build && next-sitemap",
     "lint": "eslint .",
     "test": "jest .",
     "storybook": "start-storybook -p 6006 -s ./public",
