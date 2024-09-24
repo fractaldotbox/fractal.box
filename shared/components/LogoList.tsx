@@ -32,19 +32,18 @@ const useStyle = makeStyles((theme) => ({
 const LogoList = ({
   title, brands, children, className
 }: LogoListProps) => {
-  const classes = useStyle();
   return (
-    <Grid container direction="column" className={className}>
-      <Grid item>{title}</Grid>
-      <Grid item>{children}</Grid>
-      <Grid item container justify="space-evenly">
+    <div className={`container`}>
+      <div className="item">{title}</div>
+      <div className="item">{children}</div>
+      <div className="flex flex-wrap justify-between gap-12 text-center" >
         {brands.map((brand) => (
-          <Grid item key={brand.name} className={classes.brand}>
+          <div key={brand.name} className="max-w-40 px-15">
             <img src={brand.logoSrc} alt={brand.name.concat(' logo')} />
-          </Grid>
+          </div>
         ))}
-      </Grid>
-    </Grid>
+      </div>
+    </div>
   );
 };
 

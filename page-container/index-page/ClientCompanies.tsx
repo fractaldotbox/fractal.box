@@ -3,9 +3,10 @@ import { LogoList } from 'fractal-shared/components';
 
 const content = {
   title: (
-    <Typography variant="h2" color="primary">
+    <h2 className="text-4xl font-bold p-4 m-4 text-center">
       Companies we work with
-    </Typography>
+    </h2>
+
   ),
   brands: [
     { name: 'Animoca Brands', logoSrc: '/logo_ab.png' },

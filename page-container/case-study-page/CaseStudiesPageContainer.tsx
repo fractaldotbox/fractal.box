@@ -38,12 +38,9 @@ const CaseStudiesPage = ({ articleCards }: { articleCards: ArticleCardProps[] })
     <Box mx={{ xs: '5.8%', md: '10%' }}>
       <Grid container direction="column">
         <Header isActivatedOrder={3} />
-        <Grid
-          item
-          className={classes.title}
-        >
+        <h2 className="text-4xl font-bold p-4 m-4">
           Case Studies
-        </Grid>
+        </h2>
         <ArticleCardList articleCards={articleCards} className={classes.caseStudyList} />
         <Footer className={classes.footer} />
       </Grid>

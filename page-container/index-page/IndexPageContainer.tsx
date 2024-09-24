@@ -128,7 +128,7 @@ const useStyle = makeStyles((theme) => ({
 const IndexPageContainer = () => {
   const classes = useStyle();
   return (
-    <>
+    <div className="container m-auto pt-5">
       <Box mx={{ xs: '5.8%', md: '10%' }}>
         <Grid container direction="column">
           <Header isIndexPage />
@@ -136,29 +136,19 @@ const IndexPageContainer = () => {
           <OurCompany className={classes.ourCompany} />
 
           <ClientCompanies className={classes.clientCompanies} />
-          <SoftwareDelivery className={classes.softwareDelivery} />
+          {/* <SoftwareDelivery className={classes.softwareDelivery} /> */}
         </Grid>
       </Box>
-      <Box mx={{ xs: 0, md: '10%' }}>
+      {/* <Box mx={{ xs: 0, md: '10%' }}>
         <VendorDifference className={classes.vendorDifference} />
-      </Box>
+      </Box> */}
       {/* <Box ml={{ xs: '5.8%', md: '10%' }} mr={{ xs: '5.8%', md: 0 }}>
         <TechleadaaS className={classes.techleadaaS} />
       </Box> */}
-      <Box mx={{ xs: '5.8%', md: '10%' }}>
-        <ProjectScopes className={classes.projectScopes} />
-        <TeamUpWithTechlead className={classes.teamUpWithTechlead} />
-        {/* <DeveloperSupport className={classes.developerSupport} /> */}
-        <OurTeam className={classes.ourTeam} />
-
-      </Box>
-      <Box mr={{ xs: 0, lg: '17%', xl: '30%' }}>
-        <WhereWeServe className={classes.whereWeServe} />
-      </Box>
-      <Box mx={{ xs: '5.8%', md: '10%' }}>
+      <div className="container">
         <CaseStudies className={classes.caseStudies} />
         {/* <ProjectPhrases className={classes.projectPhrases} /> */}
-      </Box>
+      </div>
       <Box mx={{ xs: '5.8%', md: 0 }}>
         <Testimonial className={classes.testimonial} />
       </Box>
@@ -166,7 +156,7 @@ const IndexPageContainer = () => {
         <Contact className={classes.contact} />
         <Footer className={classes.footer} />
       </Box>
-    </>
+    </div>
   );
 };
 

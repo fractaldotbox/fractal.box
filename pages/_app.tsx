@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-props-no-spreading */
 import { useEffect } from 'react';
+import '../input.css'
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { ThemeProvider } from '@material-ui/core/styles';
