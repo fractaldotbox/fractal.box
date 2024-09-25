@@ -10,7 +10,9 @@ const content = {
   ),
   brands: [
     { name: 'Animoca Brands', logoSrc: '/logo_ab.png' },
-    // { name: 'Mocaverse', logoSrc: '/logo_mocaverse.svg' },
+
+    { name: 'Mon', logoSrc: '/logo_mon_co.jpg' },
+    { name: 'Mocaverse', logoSrc: '/logo_mocaverse.svg' },
     { name: 'Codibook', logoSrc: '/logo_codibook.png' },
 
     { name: 'Mozilla', logoSrc: '/logo_mozilla.png' },

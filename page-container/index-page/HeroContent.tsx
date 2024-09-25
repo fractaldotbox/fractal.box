@@ -53,7 +53,7 @@ const HeroContent = ({ className }: Partial<{ className: string }>) => {
           companies and dreams
         </Typography>
       </Grid>
-      <Grid item xs={12} className={classes.heroImageContainer}>
+      <Grid item xs={12} className="container">
         <img
           srcSet="/hero_image.jpg 1440w, /hero_image_mobile.png 730w"
           sizes="(max-width: 960px) 88.4vw, 80vw"

@@ -86,7 +86,7 @@ const OurTeam = ({ className }: Partial<{ className: string }>) => {
   const { title, brands } = content;
   return (
     <Box id="our-team" component="article" className={className}>
-      <LogoList className={classes.listRoot} title={title} brands={brands}>
+      <LogoList title={title} brands={brands}>
         <Grid container justify="space-between" className={classes.members}>
           {members.map((member) => (
             <Grid item key={member.name}>

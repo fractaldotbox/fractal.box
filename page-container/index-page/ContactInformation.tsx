@@ -42,10 +42,10 @@ const ContactInformation = ({ className }: Partial<{ className: string }>) => {
       <div className="flex w-full gap-4">
         {contacts.map((contact) => (
           <div>
-            <div className="text-white">
+            <div>
               {contact.way}
             </div>
-            <div>
+            <div className="text-white">
               {contact.information}
             </div>
           </div>

@@ -5,12 +5,12 @@ import Logo from './Logo';
 
 const LogoWithName = () => (
   <a href="/">
-    <Grid container wrap="nowrap" className="items-center gap-2">
-      <Box mr="8px">
+    <div className="items-center">
+      <div className="mr-8">
         <Logo />
-      </Box>
+      </div>
       <Typography variant="h1">Fractal Labs</Typography>
-    </Grid>
+    </div>
   </a>
 );
 

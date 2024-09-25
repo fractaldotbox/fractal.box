@@ -71,9 +71,9 @@ const Header = ({ className, isActivatedOrder, isIndexPage = false }: HeaderProp
   ]);
 
   return (
-    <Box component="header" mt="2.25rem" width="100%" className={className}>
-      <Grid container wrap="nowrap" spacing={2} alignItems="center">
-        <Grid item className={classes.logoContainer}>
+    <Box className="w-full">
+      < Grid container wrap="nowrap" spacing={2} alignItems="center" >
+        <Grid item className="w-full">
           <LogoWithName />
         </Grid>
         <Grid item component="nav">
@@ -89,7 +89,7 @@ const Header = ({ className, isActivatedOrder, isIndexPage = false }: HeaderProp
             />
           </Hidden>
         </Grid>
-      </Grid>
+      </Grid >
       <Drawer anchor="right" open={isMobileMenuOpen}>
         <Grid container direction="column" className={classes.drawer}>
           <Grid item container wrap="nowrap" spacing={2}>
@@ -132,7 +132,7 @@ const Header = ({ className, isActivatedOrder, isIndexPage = false }: HeaderProp
           </Grid>
         </Grid>
       </Drawer>
-    </Box>
+    </Box >
   );
 };
 
