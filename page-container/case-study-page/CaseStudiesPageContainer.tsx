@@ -41,7 +41,7 @@ const CaseStudiesPage = ({ articleCards }: { articleCards: ArticleCardProps[] })
         <h2 className="text-4xl font-bold p-4 m-4">
           Case Studies
         </h2>
-        <ArticleCardList articleCards={articleCards} className={classes.caseStudyList} />
+        <ArticleCardList articleCards={articleCards} className="flex flex-row w-full gap-2" />
         <Footer className={classes.footer} />
       </Grid>
     </Box>

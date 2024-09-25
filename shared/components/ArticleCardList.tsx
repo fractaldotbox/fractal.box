@@ -28,21 +28,19 @@ const ArticleCardList = ({ articleCards, className }: ArticleCardListProps) => {
   const classes = useStyles();
   const items = useMemo(
     () => articleCards.map((articleCard) => (
-      <div className="w-80">
-        <ArticleCard
-          link={articleCard.link}
-          title={articleCard.title}
-          imgSrc={articleCard.imgSrc}
-          content={articleCard.content}
-        />
-      </div>
+      <ArticleCard
+        link={articleCard.link}
+        title={articleCard.title}
+        imgSrc={articleCard.imgSrc}
+        content={articleCard.content}
+      />
     )),
     [articleCards, classes]
   );
   return (
-    <Grid className="flex flex-wrap gap-4 m-auto justify-center">
+    <div className="flex flex-row flex-wrap gap-4 justify-center">
       {items}
-    </Grid>
+    </div>
   );
 };
 

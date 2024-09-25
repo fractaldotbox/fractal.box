@@ -132,9 +132,9 @@ const IndexPageContainer = () => {
       <Box mx={{ xs: '5.8%', md: '10%' }}>
         <Grid container direction="column">
           <Header isIndexPage />
-          <HeroContent className={classes.heroContent} />
-          <OurCompany className={classes.ourCompany} />
-          <ClientCompanies className={classes.clientCompanies} />
+          <HeroContent />
+          <OurCompany />
+          <ClientCompanies />
           {/* <SoftwareDelivery className={classes.softwareDelivery} /> */}
         </Grid>
       </Box>

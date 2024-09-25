@@ -33,21 +33,23 @@ const ArticleCard = ({
 }: ArticleCardProps) => {
   const classes = useStyles();
   return (
-    <a href={link} title={`go to ${title} article page`}>
-      <Grid component="article" container direction="column" className={classes.root}>
-        <Grid item className={classes.image}>
-          <img src={imgSrc} alt={title} width="448" height="266" loading="lazy" />
-        </Grid>
-        <Grid item className={classes.title}>
-          <Typography variant="h3">{title}</Typography>
-        </Grid>
-        <Grid item>
-          <Typography variant="body2" color="secondary" className={classes.content}>
-            {content}
-          </Typography>
-        </Grid>
-      </Grid>
-    </a>
+    <div className="p-4 w-1/4">
+      <a href={link} title={`go to ${title} article page`}>
+        <div className="card bg-base-300 p-4 rounded-3xl" role="article">
+          <div className="w-full" >
+            <img src={imgSrc} alt={title} loading="lazy" />
+          </div>
+          <div className={classes.title}>
+            <h3 className="text-3xl">{title}</h3>
+          </div>
+          <div>
+            <p >
+              {content}
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
   );
 };
 

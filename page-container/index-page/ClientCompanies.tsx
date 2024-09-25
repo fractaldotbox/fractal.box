@@ -42,13 +42,13 @@ const ClientCompanies = ({ className }: Partial<{ className: string }>) => {
   const { title, brands } = content;
   const classes = useStyle();
   return (
-    <Box component="article">
+    <div>
       <LogoList
         className={classes.listRoot}
         title={title}
         brands={brands}
       />
-    </Box>
+    </div>
   );
 };
 export default ClientCompanies;

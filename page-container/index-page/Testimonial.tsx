@@ -61,7 +61,7 @@ const Testimonial = ({ className }: Partial<{ className: string }>) => {
   const classes = useStyle();
 
   return (
-    <Grid component="article" container justify="space-around" className={[className, classes.root].join(' ')}>
+    <Grid component="article" container justify="space-around">
       <Grid item sm={12} className={classes.title}>
         <Typography variant="h2" color="primary">
           Testimonial

@@ -62,7 +62,7 @@ const useStyle = makeStyles((theme) => ({
 const CaseStudies = ({ className }: Partial<{ className: string }>) => {
   const classes = useStyle();
   return (
-    <Grid id="case-studies" container component="article" className={className}>
+    <Grid id="case-studies" container component="article" className="mt-4">
       <Grid item xs={12}>
         <Typography className="mb-3" variant="h2" color="textSecondary">
           Case Studies
