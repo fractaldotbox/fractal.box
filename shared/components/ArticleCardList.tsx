@@ -40,7 +40,7 @@ const ArticleCardList = ({ articleCards, className }: ArticleCardListProps) => {
     [articleCards, classes]
   );
   return (
-    <Grid className="flex flex-wrap gap-4 m-auto justify-between justify-center">
+    <Grid className="flex flex-wrap gap-4 m-auto justify-center">
       {items}
     </Grid>
   );
