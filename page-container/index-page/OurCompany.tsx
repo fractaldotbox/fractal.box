@@ -24,7 +24,7 @@ const OurCompany = ({ className }: Partial<{ className: string }>) => {
   const classes = useStyles();
 
   return (
-    <Grid container direction="column" component="article" className={className} id="our-company">
+    <Grid container direction="column" component="article" className={className + " mb-10"} id="our-company">
 
       <Typography component="h3" variant="h2" color="primary">
         The Fractal Labs
@@ -35,15 +35,16 @@ const OurCompany = ({ className }: Partial<{ className: string }>) => {
         Why employ Tech Lead as a service to grow together instead of just outsourcing?
       </Typography>
       <Grid item className={classes.imageContainer}>
-        <img style={{ borderRadius: "99999px", height: "360px", width: "360px" }} src="/logo_fractal_labs.png" width="360" height="360" alt="our company introduction logo" />
-
+        <div className="avatar w-48">
+          <img className="rounded-full" src="/logo_fractal_labs.png" alt="our company introduction logo" />
+        </div>
       </Grid>
 
       <Grid item className={classes.imageContainer}>
 
       </Grid>
 
-      <Grid item className={classes.textContainer}>
+      <Grid item className="w-full">
         <Typography variant="body1" color="secondary">
           We are a team of ex-startup founders & tech-leads, who understand both the power of technology and trade-offs to make in fast paced startups or
           innovative projects.

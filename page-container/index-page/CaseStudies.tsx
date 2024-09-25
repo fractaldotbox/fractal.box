@@ -64,11 +64,11 @@ const CaseStudies = ({ className }: Partial<{ className: string }>) => {
   return (
     <Grid id="case-studies" container component="article" className={className}>
       <Grid item xs={12}>
-        <Typography variant="h2" color="textSecondary">
+        <Typography className="mb-3" variant="h2" color="textSecondary">
           Case Studies
         </Typography>
       </Grid>
-      <Grid item className={classes.articleCardList}>
+      <Grid item className="text-center items-center justify-center">
         <ArticleCardList articleCards={articleCards} />
       </Grid>
       <Grid item container justify="center">

@@ -3,7 +3,7 @@ import { LogoList } from 'fractal-shared/components';
 
 const content = {
   title: (
-    <h2 className="text-4xl font-bold p-4 m-4 text-center">
+    <h2 className="text-4xl mt-4 font-bold p-4 m-4 text-center">
       Companies we work with
     </h2>
 
@@ -42,7 +42,7 @@ const ClientCompanies = ({ className }: Partial<{ className: string }>) => {
   const { title, brands } = content;
   const classes = useStyle();
   return (
-    <Box component="article" className={className}>
+    <Box component="article">
       <LogoList
         className={classes.listRoot}
         title={title}

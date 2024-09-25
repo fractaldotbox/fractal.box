@@ -134,7 +134,6 @@ const IndexPageContainer = () => {
           <Header isIndexPage />
           <HeroContent className={classes.heroContent} />
           <OurCompany className={classes.ourCompany} />
-
           <ClientCompanies className={classes.clientCompanies} />
           {/* <SoftwareDelivery className={classes.softwareDelivery} /> */}
         </Grid>
