@@ -1,6 +1,6 @@
 const Logo = () => (
-  <div style={{ height: "48px", width: "48px" }}>
-    <img style={{ "borderRadius": "9999px" }} src="/logo_fractal_labs.png" width="24" height="24" alt="Fractal Labs" />
+  <div className="avatar max-w-14">
+    <img className="w-12 rounded-full" src="/logo_fractal_labs.png" alt="Fractal Labs" />
   </div>
 );
 export default Logo;

@@ -14,6 +14,8 @@ module.exports = {
     extend: {},
   },
   safelist: [
+    'avatar',
+    { pattern: /round/ },
     { pattern: /flex/ },
     { pattern: /bg-/ },
     { pattern: /w-/ },

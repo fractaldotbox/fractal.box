@@ -33,29 +33,26 @@ const useStyle = makeStyles((theme) => ({
 }));
 
 const ContactInformation = ({ className }: Partial<{ className: string }>) => {
-  const classes = useStyle();
   return (
-    <Grid component="address" container className={[className, classes.root].join(' ')}>
-      <Grid item md={12}>
-        <Typography component="span" variant="h2" color="primary">
-          Contact
-        </Typography>
-      </Grid>
-      {contacts.map((contact) => (
-        <Grid key={contact.way} item container direction="column" md={6}>
-          <Grid item>
-            <Typography component="span" variant="subtitle1" color="secondary">
+    <div className="flex flex-column flex-wrap">
+      <div className="w-full">
+        <h2 className="text-2xl text-gray">Contact</h2>
+        <br />
+      </div>
+      <div className="flex w-full gap-4">
+        {contacts.map((contact) => (
+          <div>
+            <div className="text-white">
               {contact.way}
-            </Typography>
-          </Grid>
-          <Grid item className={classes.information}>
-            <Typography component="span" variant="body1">
+            </div>
+            <div>
               {contact.information}
-            </Typography>
-          </Grid>
-        </Grid>
-      ))}
-    </Grid>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+
   );
 };
 
