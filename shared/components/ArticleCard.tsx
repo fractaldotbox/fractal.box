@@ -39,8 +39,8 @@ const ArticleCard = ({
           <div className="w-full" >
             <img src={imgSrc} alt={title} loading="lazy" />
           </div>
-          <div className={classes.title}>
-            <h3 className="text-3xl">{title}</h3>
+          <div>
+            <h3 className="text-3xl font-bold pb-4 text-gray-400">{title}</h3>
           </div>
           <div>
             <p >

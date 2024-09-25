@@ -9,6 +9,18 @@ const articleCards = [
     content: `Animoca Brands completes @MocaverseNFT mint, an event during which Animoca Brands’ shareholders, employees, investees, partners, and supporters minted a total of 8,888 Mocaverse #NFTs, and sees 3,552 #ETH (US$5.5 million) sales volume in first 48 hours.`
   },
   {
+    link: '/case-study/mon',
+    title: 'Mon co',
+    imgSrc: '/case_mon.jpg',
+    content: `Our partner Vincent lead Technical Development of Pixelpals.ai, an account abstraction enabled web3 farming game which reached 400k+ MAU and became the most popular game on Mantle`
+  },
+  {
+    link: '/case-study/gvrn',
+    title: 'Gvrn',
+    imgSrc: '/case_gvrn.png',
+    content: `As Technical Lead of the start up team, Vincent built the product and dev team from scratch for GVRN.ai, the Web3 LegalTech platform, enable early stage fundraising from top VCs`
+  },
+  {
     link: '/case-study/tinytap',
     title: 'Publisher NFTs by TinyTap, Animoca Brands',
     imgSrc: '/case_tinytap.png',

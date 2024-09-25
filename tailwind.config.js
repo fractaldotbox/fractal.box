@@ -19,7 +19,9 @@ module.exports = {
     { pattern: /flex/ },
     { pattern: /bg-/ },
     { pattern: /w-/ },
-    { pattern: /p-/ }
+    { pattern: /p.*-/ },
+
+    { pattern: /font.*/ }
   ],
   plugins: [
     require('daisyui')
