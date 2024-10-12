@@ -46,9 +46,9 @@ function CaseStudiesPage({ articleCards }: Props) {
   return (
     <>
       <Head>
-        <title>Fractal Labs - Case Study</title>
+        <title>Fractal Box - Case Study</title>
         <meta name="description" content={pageDescription} />
-        <meta property="og:title" content="Fractal Labs - Case Study" />
+        <meta property="og:title" content="Fractal Box - Case Study" />
         <meta property="og:description" content={pageDescription} />
         <meta property="og:image" content="https://fractal.box/og_logo_592_310.png" />
       </Head>

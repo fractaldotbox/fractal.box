@@ -5,9 +5,9 @@ function CareersPage() {
   return (
     <>
       <Head>
-        <title>Fractal Labs - Thank You</title>
+        <title>Fractal Box - Thank You</title>
         <meta name="description" content="Thank you to contact us, we will get in touch with you shortly" />
-        <meta property="og:title" content="Fractal Labs - Thank You" />
+        <meta property="og:title" content="Fractal Box - Thank You" />
         <meta property="og:description" content="Thank you to contact us, we will get in touch with you shortly" />
         <meta property="og:image" content="https://fractal.box/og_logo_592_310.png" />
       </Head>

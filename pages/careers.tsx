@@ -5,10 +5,10 @@ function CareersPage() {
   return (
     <>
       <Head>
-        <title>Fractal Labs - Careers</title>
-        <meta name="description" content="Join Fractal Labs" />
-        <meta property="og:title" content="Fractal Labs - Careers" />
-        <meta property="og:description" content="Join Fractal Labs" />
+        <title>Fractal Box - Careers</title>
+        <meta name="description" content="Join Fractal Box" />
+        <meta property="og:title" content="Fractal Box - Careers" />
+        <meta property="og:description" content="Join Fractal Box" />
         <meta property="og:image" content="https://fractal.box/og_logo_592_310.png" />
       </Head>
       <CareerPageContainer />

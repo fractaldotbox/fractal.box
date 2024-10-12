@@ -9,7 +9,7 @@ const LogoWithName = () => (
       <div className="mr-8">
         <Logo />
       </div>
-      <Typography variant="h1">Fractal Labs</Typography>
+      <Typography variant="h1">Fractal Box</Typography>
     </div>
   </a>
 );

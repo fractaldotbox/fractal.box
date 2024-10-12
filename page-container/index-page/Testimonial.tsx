@@ -63,7 +63,7 @@ const Testimonial = ({ className }: Partial<{ className: string }>) => {
   return (
     <Grid component="article" container justify="space-around">
       <Grid item sm={12} className={classes.title}>
-        <h2 className="text-2xl">
+        <h2 className="bg-black text-white text-2xl">
           Testimonial
         </h2>
       </Grid>

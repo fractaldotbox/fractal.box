@@ -53,10 +53,10 @@ const CaseStudyPage = ({ markdown }: Props) => {
     <>
       <Head>
         <title>
-          {`Fractal Labs - ${title}`}
+          {`Fractal Box - ${title}`}
         </title>
         <meta name="description" content={summary} />
-        <meta property="og:title" content={`Fractal Labs - ${title}`} />
+        <meta property="og:title" content={`Fractal Box - ${title}`} />
         <meta property="og:description" content={summary} />
         <meta property="og:image" content={packageConfig.homepage.concat(heroImagePath)} />
         <link rel="preload" as="image" href={heroImagePath} />

@@ -14,7 +14,7 @@ const content = {
     ]
   },
   fractal: {
-    title: 'Fractal Labs',
+    title: 'Fractal Box',
     lists: [
       'We’re experienced startup founders and tech-lead that you can count on, committed to work with your team.',
       'Day to day you gain insights in technology related to your product and stay on top of the game.',

@@ -7,9 +7,9 @@ function HomePage() {
   return (
     <>
       <Head>
-        <title>Fractal Labs</title>
+        <title>Fractal Box</title>
         <meta name="description" content={description} />
-        <meta property="og:title" content="Fractal Labs" />
+        <meta property="og:title" content="Fractal Box" />
         <meta property="og:description" content={description} />
         <meta property="og:image" content="https://fractal.box/logo_fractal_labs.png" />
         <link rel="preload" as="image" href="/hero_image.jpg" />

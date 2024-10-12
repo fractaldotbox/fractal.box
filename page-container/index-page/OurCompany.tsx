@@ -27,7 +27,7 @@ const OurCompany = ({ className }: Partial<{ className: string }>) => {
     <Grid container direction="column" component="article" className={className + " mb-10"} id="our-company">
 
       <Typography component="h3" variant="h2" color="primary">
-        The Fractal Labs
+        The Fractal Box
         Difference
       </Typography>
       <br />
