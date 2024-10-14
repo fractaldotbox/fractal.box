@@ -9,10 +9,10 @@ import NavList from './NavList';
 
 const content = [
   { text: 'About', href: '#our-company' },
-  { text: 'Pricing', href: '#typical-project-scopes' },
+  //{ text: 'Pricing', href: '#typical-project-scopes' },
   { text: 'Team', href: '#our-team' },
   { text: 'Case Studies', href: '#case-studies' },
-  { text: 'Careers', href: '/careers' },
+  //{ text: 'Careers', href: '/careers' },
   { text: 'Contact', href: '#contact' }
 ];
 

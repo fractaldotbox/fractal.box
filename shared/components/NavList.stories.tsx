@@ -14,7 +14,7 @@ export const Default = Template.bind({});
 Default.args = {
   items: [
     'About',
-    'Pricing',
+    // 'Pricing',
     'Team',
     'Case Studies',
     'Careers',

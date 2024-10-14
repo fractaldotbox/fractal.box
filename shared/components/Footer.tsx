@@ -48,8 +48,8 @@ const Footer = ({ className }: FooterProps) => {
         </Typography>
         <Typography component="address" className={classes.contactInfoBlock} variant="caption" color="textSecondary">
           Contact Us
-          <br />
-          Taiwan Office: 6F., No.180, Sec. 1, Keelung Rd., Xinyi Dist., Taipei City 110, Taiwan (R.O.C.)
+          {/* <br /> */}
+          {/* Taiwan Office: 6F., No.180, Sec. 1, Keelung Rd., Xinyi Dist., Taipei City 110, Taiwan (R.O.C.) */}
           <br />
           Singapore Office: 7 TEMASEK BOULEVARD, #12-07, SUNTEC TOWER ONE, Singapore 038987
         </Typography>

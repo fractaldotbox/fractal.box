@@ -63,9 +63,9 @@ const Testimonial = ({ className }: Partial<{ className: string }>) => {
   return (
     <Grid component="article" container justify="space-around">
       <Grid item sm={12} className={classes.title}>
-        <h2 className="bg-black text-white text-2xl">
+        <Typography variant="h3" color="primary">
           Testimonial
-        </h2>
+        </Typography>
       </Grid>
       {content.map((testimonial) => (
         <Grid component="section" className={classes.sectionRoot} key={testimonial.name} item container alignItems="center" direction="column">
