@@ -28,8 +28,8 @@ const Member = ({ avatarSrc, name, position }: MemberProps) => {
   const classes = useStyles();
   return (
     <Grid container direction="column" component="section" className={classes.root}>
-      <Grid item>
-        <Avatar src={avatarSrc} alt={name} className={classes.avatar} imgProps={{ width: '200', height: '200' }} />
+      <Grid item className="w-20 h-20 rounded">
+        <img src={avatarSrc} alt={name} className="rounded-full" />
       </Grid>
       <Grid item>
         <Typography component="h3" variant="h3" color="primary">

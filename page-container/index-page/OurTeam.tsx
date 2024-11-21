@@ -82,11 +82,9 @@ const useStyle = makeStyles((theme) => ({
 }));
 
 const OurTeam = ({ className }: Partial<{ className: string }>) => {
-  const classes = useStyle();
-  const { title, brands } = content;
   return (
     <Box id="our-team" component="article" className={className}>
-      <Grid container justify="space-between" className={classes.members}>
+      <Grid container justify="space-between">
         {members.map((member) => (
           <Grid item key={member.name}>
             <Member name={member.name} position={member.position} avatarSrc={member.avatarSrc} />
