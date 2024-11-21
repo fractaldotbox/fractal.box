@@ -152,6 +152,9 @@ const IndexPageContainer = () => {
         <Testimonial className={classes.testimonial} />
       </Box>
       <Box mx={{ xs: '5.8%', md: '10%' }}>
+        <OurTeam className={classes.ourTeam} />
+      </Box>
+      <Box mx={{ xs: '5.8%', md: '10%' }}>
         <Contact className={classes.contact} />
         <Footer className={classes.footer} />
       </Box>
