@@ -128,7 +128,7 @@ const useStyle = makeStyles((theme) => ({
 const IndexPageContainer = () => {
   const classes = useStyle();
   return (
-    <div className="container m-auto pt-5">
+    <div className="container m-auto">
       <Box mx={{ xs: '5.8%', md: '10%' }}>
         <Grid container direction="column">
           <Header isIndexPage />

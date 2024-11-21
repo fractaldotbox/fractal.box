@@ -46,7 +46,7 @@ const HeroContent = ({ className }: Partial<{ className: string }>) => {
   const classes = useStyles();
   return (
     <Grid container direction="column" component="article" className={className}>
-      <Grid item xs={12}>
+      <Grid item xs={12} className="pb-10">
         <Typography variant="h2" color="primary">
           Architecting software, teams,
           <Hidden smDown><br /></Hidden>
