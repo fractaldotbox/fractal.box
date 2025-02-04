@@ -5,12 +5,12 @@
 <script is:inline>
 // Gray scale constants for the Julia set rendering.
 const INSIDE_GRAY = 255;   // Dark gray for points inside the set.
-const OUTSIDE_GRAY = 255; // Lighter gray for points outside the set.
+const OUTSIDE_GRAY = 100; // Lighter gray for points outside the set.
 
 // Other constants.
 const MAX_ITERATIONS = 30;
 const INITIAL_ZOOM = 1;
-const ZOOM_SPEED = 1.0005;
+const ZOOM_SPEED = 1.001;
 
 document.addEventListener("DOMContentLoaded", () => {
   const canvas = document.getElementById("juliaCanvas");
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
           data[index++] = gray;
           data[index++] = gray;
           data[index++] = gray;
-          data[index++] = 10;
+          data[index++] = 30;
         }
       }
     }
