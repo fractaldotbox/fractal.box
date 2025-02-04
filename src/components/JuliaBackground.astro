@@ -1,0 +1,103 @@
+---
+---
+<!-- A full-screen canvas that sits behind your content -->
+<canvas id="juliaCanvas" class="fixed inset-0 z-[-1] pointer-events-none"></canvas>
+<script is:inline>
+// Gray scale constants for the Julia set rendering.
+const INSIDE_GRAY = 255;   // Dark gray for points inside the set.
+const OUTSIDE_GRAY = 255; // Lighter gray for points outside the set.
+
+// Other constants.
+const MAX_ITERATIONS = 30;
+const INITIAL_ZOOM = 1;
+const ZOOM_SPEED = 1.0005;
+
+document.addEventListener("DOMContentLoaded", () => {
+  const canvas = document.getElementById("juliaCanvas");
+  if (!canvas) return;
+  const ctx = canvas.getContext("2d");
+  if (!ctx) return;
+
+  let width = window.innerWidth;
+  let height = window.innerHeight;
+
+  // Resize canvas to always match the viewport size.
+  function resize() {
+    width = window.innerWidth;
+    height = window.innerHeight;
+    canvas.width = width;
+    canvas.height = height;
+  }
+  window.addEventListener("resize", resize);
+  resize();
+
+  // Default constants for the Julia set.
+  // We'll update these based on the mouse position.
+  let c_real = -0.7;
+  let c_imag = 0.27015;
+
+  // Update the constant c based on the cursor position.
+  window.addEventListener("mousemove", (e) => {
+    // Map the x-coordinate to a range of [-1, 1]
+    c_real = (e.clientX / width) * 2 - 1;
+    // Map the y-coordinate to a range of [-1, 1]
+    c_imag = (e.clientY / height) * 2 - 1;
+  });
+
+  let zoom = INITIAL_ZOOM;
+
+  function render() {
+    const imageData = ctx.createImageData(width, height);
+    const data = imageData.data;
+
+    // Map pixel coordinates to the complex plane.
+    // The scale adjusts with zoom and maintains the aspect ratio.
+    const scale = 1.5 / zoom;
+    const aspect = width / height;
+
+    let index = 0;
+    for (let y = 0; y < height; y++) {
+      // Map y to the imaginary axis (centered at 0)
+      const zy0 = ((y - height / 2) / (height / 2)) * scale;
+      for (let x = 0; x < width; x++) {
+        // Map x to the real axis (adjusted for aspect ratio)
+        const zx0 = ((x - width / 2) / (width / 2)) * scale * aspect;
+        let zx = zx0;
+        let zy = zy0;
+        let iteration = 0;
+        while (zx * zx + zy * zy < 4 && iteration < MAX_ITERATIONS) {
+          let xtemp = zx * zx - zy * zy + c_real;
+          zy = 2 * zx * zy + c_imag;
+          zx = xtemp;
+          iteration++;
+        }
+        
+        if (iteration === MAX_ITERATIONS) {
+          // Use the inside (Julia set) grayscale color.
+          data[index++] = INSIDE_GRAY;
+          data[index++] = INSIDE_GRAY;
+          data[index++] = INSIDE_GRAY;
+          data[index++] = 255;
+        } else {
+          const factor = iteration / MAX_ITERATIONS;
+          // Interpolate a grayscale value between INSIDE_GRAY and OUTSIDE_GRAY.
+          const gray = Math.floor(INSIDE_GRAY + factor * (OUTSIDE_GRAY - INSIDE_GRAY));
+          data[index++] = gray;
+          data[index++] = gray;
+          data[index++] = gray;
+          data[index++] = 10;
+        }
+      }
+    }
+    ctx.putImageData(imageData, 0, 0);
+  }
+
+  function animate() {
+    render();
+    zoom *= ZOOM_SPEED; // Apply a slow zoom effect
+    requestAnimationFrame(animate);
+  }
+
+  animate();
+});
+</script> 

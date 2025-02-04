@@ -1,9 +1,0 @@
-# *
-User-agent: *
-Allow: /
-
-# Host
-Host: https://fractal.box
-
-# Sitemaps
-Sitemap: https://fractal.box/sitemap.xml
