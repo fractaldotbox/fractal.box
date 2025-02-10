@@ -27,8 +27,12 @@ Inside of your Astro project, you'll see the following folders and files:
 │       └── index.astro
 └── package.json
 ```
+## Content Management
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+- For landing, Collection not to be used as each section will evolve for different schema
+- decoupling content markdown to ease presentation and localization 
+- use attributes for taglines
+- it's not possible to group content by headings as  `getHeadings()` does not provide content 
 
 ## 🧞 Commands
 
