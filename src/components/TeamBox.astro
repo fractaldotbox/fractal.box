@@ -1,0 +1,16 @@
+---
+const { content } = Astro.props;
+
+import * as TeamProfile from "../content/landing/team-profile.md";
+console.log('TeamProfile',TeamProfile)
+---
+
+
+<div
+    Team box
+    <div>
+        {TeamProfile.frontmatter.m1Title}
+    </div>
+
+    <img  class="w-10 h-10 rounded-full" src={TeamProfile.frontmatter.m1Image}  />
+</div>
