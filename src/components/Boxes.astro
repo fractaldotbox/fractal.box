@@ -1,6 +1,5 @@
 ---
 const { content, subSection, children } = Astro.props;
-console.log('subSection', subSection, children)
 ---
 
 <div class="container mx-auto p-6 text-slate-800 max-w-[800px]">
@@ -12,7 +11,7 @@ console.log('subSection', subSection, children)
 
    <div class="grid grid-cols-5 gap-6">
    
-     <div class="bg-white  flex flex-col col-span-3 items-center justify-center text-lg font-semibold rounded-lg shadow-lg p-4">
+     <div class="bg-white  flex flex-col col-span-3 row-span-2 items-center justify-center text-lg font-semibold rounded-lg shadow-lg p-4">
         <div class="text-slate-500">
           {content.frontmatter.b2subtitle}
         </div>    
@@ -20,11 +19,14 @@ console.log('subSection', subSection, children)
           {content.frontmatter.b2content}
         </div>
     </div>
-     <div class="bg-white  flex flex-col col-span-1 items-center justify-center text-lg font-semibold rounded-lg shadow-lg">
+     <div class="bg-white  flex flex-col col-span-1 h-[100px] items-center justify-center text-lg font-semibold rounded-lg shadow-lg">
+      {content.frontmatter.link}
+    </div>
+    <div class="bg-white  flex flex-col col-span-1 h-[100px]  items-center justify-center text-lg font-semibold rounded-lg shadow-lg">
       {content.frontmatter.metric}
     </div>
-    <div class="bg-white  flex flex-col col-span-1 items-center justify-center text-lg font-semibold rounded-lg shadow-lg">
-      {content.frontmatter.metric}
+        <div class="bg-white  flex flex-col col-span-2 items-center justify-center text-lg font-semibold rounded-lg shadow-lg">
+     some image
     </div>
      <div class="bg-white  flex items-center col-span-5 justify-center text-lg font-semibold rounded-lg shadow-lg p-4">
          <slot name="box2" class="h-[300px]" />

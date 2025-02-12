@@ -3,7 +3,8 @@
 b2subtitle: Industries
 b2content: Crypto, Gaming, FinTech, Supply Chain
 metric: 15 projects
-
+link: Blogs
+linkHref: /blog
 
 ---
 

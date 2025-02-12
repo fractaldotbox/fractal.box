@@ -2,15 +2,28 @@
 const { content } = Astro.props;
 
 import * as TeamProfile from "../content/landing/team-profile.md";
-console.log('TeamProfile',TeamProfile)
+import Member from "./Member.astro";
+console.log("TeamProfile", TeamProfile);
 ---
 
 
 <div
     Team box
-    <div>
-        {TeamProfile.frontmatter.m1Title}
-    </div>
+    <div class="flex flex row">
 
-    <img  class="w-10 h-10 rounded-full" src={TeamProfile.frontmatter.m1Image}  />
+<div class="flex flex-col">
+
+<div>
+    <Member title={TeamProfile.frontmatter.m1Title} avatar={TeamProfile.frontmatter.m1Image} />
+</div>
+<div>
+    <Member title={TeamProfile.frontmatter.m2Title} avatar={TeamProfile.frontmatter.m2Image} />
+</div>
+</div>
+
+</div>
+    
+    
+    </div>
+   
 </div>
