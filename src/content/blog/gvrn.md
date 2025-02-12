@@ -1,9 +1,10 @@
 ---
-title: "GVRN"
-heroImagePath: "/case_gvrn.png"
-highlight: ""
-summary: "Legaltech platform for web3 companies"
-order: 4
+author: debuggingfuture
+# title: "GVRN"
+# heroImagePath: "/case_gvrn.png"
+# highlight: ""
+# summary: "Legaltech platform for web3 companies"
+# order: 4
 ---
 
 
