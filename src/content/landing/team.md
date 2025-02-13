@@ -2,8 +2,10 @@
 
 subtitle: Passionate in latest blockchain technologies, we are active at hackathons with ETHGlobal finalist and $50k prizes.
 metric: $50k+ grants
-b2subtitle: Techstack
+b2subtitle: Projects
 b2content: AI agents with RAG, Low latency trading, rule engines, Wallet management  
+b3subtitle: Techstack
+b3content: Typescript, Rust, AWS, Coinbase Development Platform 
 
 ---
 
