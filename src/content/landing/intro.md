@@ -11,5 +11,5 @@ linkHref: /blog
 We are a development studio where ex-founders empower business with open source AI and decentralized technologies
 
 
-We built production applications and projects with millions TVL, working with Animoca brands, Mon Studio.
+We have built production projects for banks and startups, with 400k+MAU & millions in TVL on cutting edge tech stacks, for clients and partners like Animoca Brands, Filecoin Foundation, Mon Studio, Spaceship and 20+ more.
 

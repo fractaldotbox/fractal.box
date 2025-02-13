@@ -1,16 +1,13 @@
 ---
 
-subtitle: Passionate in latest blockchain technologies, we are active at hackathons with ETHGlobal finalist and $50k prizes.
-metric: $50k+ grants
-b2title: Project
-b2content: Geist
+metric: $50k+
+b2subtitle: OSS
+b2content: DappKit, agentkit
 
 ---
 
-Public goods funding is a key reason we are in the field.
+Exploring fair economic models for sofware and public goods funding is a key reason why we are in the field.
 
-We build OSS for the ecosystems
+We built Open source for the ecosystems, such as Geist dappKit which raised $10k from Gitcoin.
 
-We're building Geist dappKit which raised $10k from Gitcoin.
-
-We also build no-code tool for public goods.
+To pay it forward, We are also build no-code tool for public goods communities.
