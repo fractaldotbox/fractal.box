@@ -6,6 +6,7 @@ metric: 15 projects
 link: Blogs
 linkHref: /blog
 
+
 ---
 
 We are a development studio where ex-founders empower business with open source AI and decentralized technologies
