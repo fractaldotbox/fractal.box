@@ -1,10 +1,10 @@
 ---
 const { content } = Astro.props;
 
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
 import * as TeamProfile from "../content/landing/team-profile.md";
 import Member from "./Member.astro";
-import { getCollection } from "astro:content";
-import { Image } from "astro:assets";
 const clients = await getCollection("client").then((collection) =>
 	collection.sort((a, b) => a.data.order - b.data.order),
 );

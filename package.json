@@ -5,6 +5,7 @@
 	"scripts": {
 		"dev": "astro dev",
 		"build": "astro build",
+		"check:fix": "biome check --fix",
 		"preview": "astro preview",
 		"lint:fix": "biome check --fix",
 		"astro": "astro"

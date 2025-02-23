@@ -12,7 +12,7 @@ export default defineConfig({
 	},
 	// reserver for server rendered page
 	adapter: cloudflare({
-		imageService: 'passthrough'
+		imageService: "passthrough",
 	}),
 
 	// output: 'server'

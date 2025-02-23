@@ -4,7 +4,6 @@ import { glob } from "astro/loaders";
 const blog = defineCollection({
 	loader: glob({ pattern: "**/*.md", base: "./src/content/blog" }),
 	schema: z.object({
-
 		author: reference("author"),
 	}),
 });
@@ -22,6 +21,6 @@ const client = defineCollection({
 	// }),
 });
 
-console.log('clients', client)
+console.log("clients", client);
 
 export const collections = { blog, client };
