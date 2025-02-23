@@ -1,9 +1,21 @@
 ---
 const { content } = Astro.props;
-
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
 import logoBowtie from "../assets/logo_bowtie.jpg";
 import * as TeamProfile from "../content/landing/team-profile.md";
 import Member from "./Member.astro";
+
+const teamCompanies = await getCollection("teamCompany").then((collection) =>
+	collection.sort((a, b) => b.data.order - a.data.order),
+);
+interface Props {
+	imagePath: string;
+}
+
+const logoPaths = import.meta.glob<{ default: ImageMetadata }>(
+	"/src/assets/*.{jpeg,jpg,png,gif,svg}",
+);
 ---
 
 
@@ -23,29 +35,21 @@ import Member from "./Member.astro";
                 <Member name={TeamProfile.frontmatter.m4} title={TeamProfile.frontmatter.m4Title} avatar={TeamProfile.frontmatter.m4Image} />
             </div>
         </div>
-
-        <div class="mx-14 p-8">
-
-          
-            <div class="text-center">
-                <div class="text-slate-500 text-2xl">
-                    Contact us to build your dream
-
-                </div>
-                <br/>
-                <a href="mailto:v@fractal.box">v@fractal.box</a>
-            </div>
+        
+        <div>
+            <div class="flex flex-row  col-span-5 m-auto p-2  gap-4 text-center justify-center items-center">
+                {
+                    teamCompanies.map(
+                        ({data:{logoClass, logoSrc}})=>(
+                        <div class="flex flex-row">
+                            <Image class={"w-24 "+logoClass} src={logoPaths[`/${logoSrc}`]()} alt="" />
+                        </div>    
+                )
+            )
+                }
+            </div>    
         </div>
 
-<!-- <div>
-    <div class="flex flex-row">
-        Team from
-    </div>
-    <div>
-        <img class="w-24" src={logoBowtie.src} />
-    </div>
-
-</div> -->
 </div>
     
     

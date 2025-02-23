@@ -25,9 +25,9 @@ const logoPaths = import.meta.glob<{ default: ImageMetadata }>(
     <div class="flex flex-row  col-span-5 m-auto p-2  gap-4 text-center justify-center items-center">
         {
             clients.map(
-                (client, index)=>(
+            ({data:{logoClass, logoSrc}})=>(
                 <div class="">
-                    <Image class={"w-24 "+clients[index].data.logoClass} src={logoPaths[`/${clients[index].data.logoSrc}`]()} alt="" />
+                    <Image class={"w-24 "+logoClass} src={logoPaths[`/${logoSrc}`]()} alt="" />
                 </div>    
                 
                 )

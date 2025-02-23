@@ -1,7 +1,7 @@
 
 ---
 
-m1: Vincent
+m1: Vincent Lau
 m1Image: src/assets/avatar_vincent.jpg
 m1Title: Founding Partner
 

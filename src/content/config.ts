@@ -16,11 +16,18 @@ const client = defineCollection({
 		logoSrc: z.string().optional(),
 		order: z.number().optional(),
 	}),
-	// schema: z.object({
-	// 	author: reference("author"),
-	// }),
+});
+
+const teamCompany = defineCollection({
+	loader: glob({ pattern: "**/*.md", base: "./src/content/team/company" }),
+	schema: z.object({
+		title: z.string(),
+		logoClass: z.string(),
+		logoSrc: z.string().optional(),
+		order: z.number().optional(),
+	}),
 });
 
 console.log("clients", client);
 
-export const collections = { blog, client };
+export const collections = { blog, client, teamCompany };
