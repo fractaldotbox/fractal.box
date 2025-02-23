@@ -9,17 +9,17 @@ import logoBowtie from "../assets/logo_bowtie.jpg";
 
 <div>
     <div class="flex flex-col p-2 w-full mt-10">
-        <div class="grid grid-cols-2 gap-16 ">
-            <div>
+        <div class="grid grid-cols-2 gap-16">
+            <div class="flex justify-center items-center">
                 <Member name={TeamProfile.frontmatter.m1} title={TeamProfile.frontmatter.m1Title} avatar={TeamProfile.frontmatter.m1Image} />
             </div>
-            <div>
+            <div class="flex justify-center items-center">
                 <Member name={TeamProfile.frontmatter.m2} title={TeamProfile.frontmatter.m2Title} avatar={TeamProfile.frontmatter.m2Image} />
             </div>
-            <div>
+            <div class="flex justify-center items-center">
                 <Member name={TeamProfile.frontmatter.m3} title={TeamProfile.frontmatter.m3Title} avatar={TeamProfile.frontmatter.m3Image} />
             </div>
-            <div>
+            <div class="flex justify-center items-center">
                 <Member name={TeamProfile.frontmatter.m4} title={TeamProfile.frontmatter.m4Title} avatar={TeamProfile.frontmatter.m4Image} />
             </div>
         </div>
@@ -28,7 +28,10 @@ import logoBowtie from "../assets/logo_bowtie.jpg";
 
           
             <div class="text-center">
-                Contact us to build
+                <div class="text-slate-500">
+                    Contact us to build your dream
+
+                </div>
                 <br/>
                 <a href="mailto:v@fractal.box">v@fractal.box</a>
             </div>
