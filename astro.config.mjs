@@ -1,5 +1,5 @@
 // @ts-check
-import { defineConfig } from "astro/config";
+import { defineConfig, passthroughImageService } from "astro/config";
 
 import tailwindcss from "@tailwindcss/vite";
 
@@ -11,5 +11,9 @@ export default defineConfig({
 		plugins: [tailwindcss()],
 	},
 	// reserver for server rendered page
-	adapter: cloudflare(),
+	adapter: cloudflare({
+		imageService: 'passthrough'
+	}),
+
+	// output: 'server'
 });
