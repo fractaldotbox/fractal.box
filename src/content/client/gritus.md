@@ -1,6 +1,6 @@
 ---
 title: Gritus
 logoSrc: src/assets/logo_gritus.png
-order: 10
+order: 3
 logoClass: invert-60
 ---

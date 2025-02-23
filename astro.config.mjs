@@ -1,3 +1,5 @@
+import rehypeExternalLinks from "rehype-external-links";
+
 // @ts-check
 import { defineConfig, passthroughImageService } from "astro/config";
 
@@ -14,6 +16,16 @@ export default defineConfig({
 	adapter: cloudflare({
 		imageService: "passthrough",
 	}),
+	markdown: {
+		// rehypePlugins: [
+		// 	[
+		// 		rehypeExternalLinks,
+		// 		{
+		// 			content: { type: 'text', value: ' 🔗' }
+		// 		}
+		// 	],
+		// ]
+	},
 
 	// output: 'server'
 });

@@ -1,4 +1,10 @@
-# Some Hacks we did 
+Some ideas keep us awake and hacking, such as DataDAOs and AI governance ([Ethereum Localization Services](https://ethglobal.com/showcase/ethereuml10nservice-v65cs)), orchestrating agent swarm [(CivAI)](https://ethglobal.com/showcase/civ-ai-miwn2)
+and autonomous websites ([Geist](https://ethglobal.com/showcase/geist-x3fur)), we're proud to have received $30k+ prizes.
+
+Yes, we ship as quick as 36 hours.
+
+
+<!-- # Some Hacks we did 
 
 |     |  |     |    |   | |
 | --- | --- | --- |--- |--- |--- |
@@ -11,4 +17,4 @@
 | 2024-06 | EthGlobal HackFs 2024 | (Online) | [Civ AI](https://ethglobal.com/showcase/civ-ai-miwn2)  | 🏆🏆🏆 Finalist, CoopHive 2nd  | 
 | 2024-06 | ZuBerlin | (IRL) | ZuBerlin Pilot | 🏆 2nd + Mantle | 
 | 2024-11 | EthGlobal Bangkok | (Online) | [Tuk Tuk to the Moon](https://web.ethglobal.com/showcase/ethereuml10nservice-v65cs) | 
-| 2024-11 | Agentic Ethereum | (Online) | Alpha Bees | 
+| 2024-11 | Agentic Ethereum | (Online) | Alpha Bees |  -->

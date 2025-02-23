@@ -3,17 +3,16 @@ const { content } = Astro.props;
 
 import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
-import * as TeamProfile from "../content/landing/team-profile.md";
-import Member from "./Member.astro";
+
 const clients = await getCollection("client").then((collection) =>
-	collection.sort((a, b) => a.data.order - b.data.order),
+	collection.sort((a, b) => b.data.order - a.data.order),
 );
 interface Props {
 	imagePath: string;
 }
 
 const logoPaths = import.meta.glob<{ default: ImageMetadata }>(
-	"/src/assets/*.{jpeg,jpg,png,gif}",
+	"/src/assets/*.{jpeg,jpg,png,gif,svg}",
 );
 ---
 

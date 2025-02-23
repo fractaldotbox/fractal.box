@@ -1,6 +1,6 @@
 ---
 title: Mocaverse
 logoSrc: src/assets/logo_mocaverse.png
-order: 10
+order: 8
 logoClass: grayscale
 ---
