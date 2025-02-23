@@ -1,0 +1,37 @@
+---
+const { content } = Astro.props;
+
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+
+const clients = await getCollection("client").then((collection) =>
+	collection.sort((a, b) => b.data.order - a.data.order),
+);
+interface Props {
+	imagePath: string;
+}
+
+const logoPaths = import.meta.glob<{ default: ImageMetadata }>(
+	"/src/assets/*.{jpeg,jpg,png,gif,svg}",
+);
+---
+
+
+<div class="grid grid-cols-5 gap-6">
+    <div class="col-span-5 text-center">
+        <h2>Companies we work with</h2>
+
+    </div>
+    <div class="flex flex-row  col-span-5 m-auto p-2  gap-4 text-center justify-center items-center">
+        {
+            clients.map(
+            ({data:{logoClass, logoSrc}})=>(
+                <div class="">
+                    <Image class={"w-24 "+logoClass} src={logoPaths[`/${logoSrc}`]()} alt="" />
+                </div>    
+                
+                )
+            )
+        }
+    </div>
+</div>

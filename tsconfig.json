@@ -1,40 +1,5 @@
 {
-  "compilerOptions": {
-    "allowJs": true,
-    "strict": false,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": false,
-    "skipLibCheck": true,
-    "baseUrl": ".",
-    "paths": {
-      "fractal-shared/*": [
-        "shared/*"
-      ],
-      "fractal-pages/*": [
-        "page-container/*"
-      ]
-    },
-    "lib": [
-      "DOM",
-      "es2020",
-      "esnext.asynciterable"
-    ],
-    "target": "es2020",
-    "module": "esnext"
-  },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules",
-    "**/*.ttf"
-  ]
+	"extends": "astro/tsconfigs/strict",
+	"include": [".astro/types.d.ts", "**/*"],
+	"exclude": ["dist"]
 }

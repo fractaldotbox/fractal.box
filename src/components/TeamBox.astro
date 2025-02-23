@@ -1,0 +1,58 @@
+---
+const { content } = Astro.props;
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+import logoBowtie from "../assets/logo_bowtie.jpg";
+import * as TeamProfile from "../content/landing/team-profile.md";
+import Member from "./Member.astro";
+
+const teamCompanies = await getCollection("teamCompany").then((collection) =>
+	collection.sort((a, b) => b.data.order - a.data.order),
+);
+interface Props {
+	imagePath: string;
+}
+
+const logoPaths = import.meta.glob<{ default: ImageMetadata }>(
+	"/src/assets/*.{jpeg,jpg,png,gif,svg}",
+);
+---
+
+
+<div>
+    <div class="flex flex-col p-2 w-full mt-10">
+        <div class="grid grid-cols-2 gap-12 mb-10">
+            <div class="flex justify-center items-center">
+                <Member name={TeamProfile.frontmatter.m1} title={TeamProfile.frontmatter.m1Title} avatar={TeamProfile.frontmatter.m1Image} />
+            </div>
+            <div class="flex justify-center items-center">
+                <Member name={TeamProfile.frontmatter.m2} title={TeamProfile.frontmatter.m2Title} avatar={TeamProfile.frontmatter.m2Image} />
+            </div>
+            <div class="flex justify-center items-center">
+                <Member name={TeamProfile.frontmatter.m3} title={TeamProfile.frontmatter.m3Title} avatar={TeamProfile.frontmatter.m3Image} />
+            </div>
+            <div class="flex justify-center items-center">
+                <Member name={TeamProfile.frontmatter.m4} title={TeamProfile.frontmatter.m4Title} avatar={TeamProfile.frontmatter.m4Image} />
+            </div>
+        </div>
+        
+        <div>
+            <div class="flex flex-row  col-span-5 m-auto p-2  gap-4 text-center justify-center items-center">
+                {
+                    teamCompanies.map(
+                        ({data:{logoClass, logoSrc}})=>(
+                        <div class="flex flex-row">
+                            <Image class={"w-24 "+logoClass} src={logoPaths[`/${logoSrc}`]()} alt="" />
+                        </div>    
+                )
+            )
+                }
+            </div>    
+        </div>
+
+</div>
+    
+    
+    </div>
+   
+</div>
