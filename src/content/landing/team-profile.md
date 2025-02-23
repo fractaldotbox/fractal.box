@@ -2,20 +2,20 @@
 ---
 
 m1: Vincent
-m1Image: https://fractal.box/avatar_vincent.jpg
+m1Image: src/assets/avatar_vincent.jpg
 m1Title: Founding Partner
 
-m2: Vincent
-m2Title: Founding Partner
-m2Image: https://fractal.box/avatar_vincent.jpg
+m2: Ken Yiu
+m2Title: Partner
+m2Image: src/assets/avatar_ken.jpg
 
-m3: Vincent
-m3Title: Founding Partner
-m3Image: https://fractal.box/avatar_vincent.jpg
+m3: Justin Lau
+m3Title: Partner
+m3Image: src/assets/avatar_justin.jpg
 
-m4: Vincent
-m4Title: Founding Partner
-m4Image: https://fractal.box/avatar_vincent.jpg
+m4: Brian Wong
+m4Title: Partner
+m4Image: src/assets/avatar_brian.jpg
 
 
 

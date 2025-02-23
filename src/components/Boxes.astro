@@ -4,37 +4,38 @@ const { content, subSection, children } = Astro.props;
 
 <div class="container mx-auto p-6 text-slate-800 max-w-[800px]">
   <div class="grid grid-cols-1 gap-6 pb-6">
-    <div class="h-[400px] bg-white flex flex-col gap-4 items-center justify-center leading-relaxed text-lg text-center font-light text-xl  px-24 py-24 rounded-lg shadow-lg">
+    <div class="h-[400px] bg-white flex flex-col gap-4 px-12 items-center justify-center leading-relaxed text-lg text-center font-light text-xl  rounded-lg shadow-lg">
        <content.Content />
     </div>
   </div>
 
    <div class="grid grid-cols-5 gap-6">
-   
      <div class="bg-white  flex flex-col col-span-3 row-span-2 items-center justify-center text-lg font-semibold rounded-lg shadow-lg p-4">
         <div class="text-slate-500">
           {content.frontmatter.b2subtitle}
         </div>    
-        <div>
+        <div class="p-2">
           {content.frontmatter.b2content}
         </div>
     </div>
      <div class="bg-white  flex flex-col col-span-1 h-[100px] items-center justify-center text-lg font-semibold rounded-lg shadow-lg">
-      {content.frontmatter.link}
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-external-link"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg> -->
+      <a href={content.frontmatter.linkHref} target="_blank" >
+        {content.frontmatter.link}
+      </a>
     </div>
     <div class="bg-white flex flex-col col-span-1 h-[100px] p-4 items-center justify-center text-lg font-semibold rounded-lg shadow-lg">
       {content.frontmatter.metric}
     </div>
-        <div class="bg-white flex flex-col col-span-2 p-2 items-center justify-center text-lg font-semibold rounded-lg shadow-lg">
+        <!-- <div class="bg-white flex flex-col col-span-2 p-2 items-center justify-center text-lg font-semibold rounded-lg shadow-lg">
           <div class="text-slate-500">
             {content.frontmatter.b3subtitle}
           </div>    
-          <div>
+          <div class="justify-center">
             {(content.frontmatter.b3content || '').split(',').map((text:string)=>{return <div>{text}</div>})}
           </div>
-
-    </div>
-     <div class="bg-white  flex items-center col-span-5 justify-center text-lg font-semibold rounded-lg shadow-lg p-4">
+      </div> -->
+     <div class="bg-white  flex flex-col items-center col-span-5 justify-center text-lg font-semibold rounded-lg shadow-lg p-4">
          <slot name="box2" class="h-[300px]" />
     </div>
 

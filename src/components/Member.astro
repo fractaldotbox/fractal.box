@@ -1,15 +1,22 @@
 ---
 
-const { title, avatar } = Astro.props;
+const { name, title, avatar } = Astro.props;
 ---
 
 
 <div>
-    <div>
-            {title}
-    </div>
+        <div class="flex w-full">
+                <img  class="w-24 h-24 rounded-full" src={avatar}  />
+        </div>
 
-   <div>
-        <img  class="w-10 h-10 rounded-full" src={avatar}  />
-   </div>
+            
+                <div class="p-2 justify-center items-center w-full font-semibold">
+                        {name}
+                </div>
+                <div class="p-2 justify-center items-center w-full font-semibold text-slate-500">
+                        {title}
+                </div>
+        </div>
+        </div>
+
 </div>

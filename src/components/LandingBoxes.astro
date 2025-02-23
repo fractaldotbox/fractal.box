@@ -4,6 +4,7 @@ import Boxes from "../components/Boxes.astro";
 
 import TeamBox from "../components/TeamBox.astro";
 import SocialBox from "../components/SocialBox.astro";
+import ClientProfile from "../components/ClientProfile.astro";
 
 import * as Intro from "../content/landing/intro.md";
 
@@ -12,23 +13,43 @@ import * as Team from "../content/landing/team.md";
 
 import * as Web3 from "../content/landing/web3.md";
 
+import hackImg1 from "../assets/ethglobal_sg.jpg";
+
+import * as Web3Profile from "../content/landing/web3-profile.md";
+
 console.log(Intro.frontmatter);
 ---
 
 <div class="flex flex-col gap-4">
-w
+
 <div>
 <Boxes content={Intro} >
 
   <p slot="box2">
-    <SocialBox />
-  </p>
+    <!-- <SocialBox /> -->
 
+    <ClientProfile />
+  </p>
     </Boxes>
 </div>
 
 <div>
-<Boxes content={Web3} />
+<Boxes content={Web3} >
+  <div slot="box2">
+    <div class="m-auto p-8">
+      <div class="text-slate-500  justify-center text-lg font-normal ">
+        We hacked on ideas related to DataDAOs and AI governance (Ethereum Localization Services), orchestrating agent swarm (CivAI)
+        and autonomous websites (Geist), proud to have received $30k+ prizes.
+
+        Yes, we ship as quick as 36 hours.
+      </div>
+      <div class="p-4">
+        <img src={hackImg1.src} />
+      </div>
+    </div>
+    <!-- <Web3Profile.Content /> -->
+  </div>
+  </Boxes>
 </div>
 
 
@@ -39,10 +60,10 @@ w
     </Boxes>
 </div>
 
-
+<!-- 
 <div>
 <Boxes content={PublicGoods} />
-</div>
+</div> -->
 
 </div>
 

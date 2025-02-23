@@ -2,15 +2,17 @@
 
 b2subtitle: Industries
 b2content: Crypto, Gaming, FinTech, Supply Chain
-metric: 15 projects
-link: Blogs
+metric: 50+ projects
+link: since 2018
 linkHref: /blog
 
 
 ---
 
-We are a development studio where ex-founders empower business with open source AI and decentralized technologies
+We are a development studio where ex-founders empower business with open source AI and decentralized technologies.
 
 
-We have built production projects for banks and startups, with 400k+MAU & millions in TVL on cutting edge tech stacks, for clients and partners like Animoca Brands, Filecoin Foundation, Mon Studio, Spaceship and 20+ more.
+We have delivered and consulted for banks and startups, on high stake projects that requrie pragmatism amid hypergrowth and fast-moving technology landscapes.
+
+<!-- Our clients and partners includes Animoca Brands, Filecoin Foundation, Mon Studio, Spaceship and 20+ more. -->
 
