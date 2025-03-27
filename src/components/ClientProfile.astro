@@ -22,14 +22,13 @@ const logoPaths = import.meta.glob<{ default: ImageMetadata }>(
         <h2>Companies we work with</h2>
 
     </div>
-    <div class="flex flex-row  col-span-5 m-auto p-2  gap-4 text-center justify-center items-center">
+    <div class="flex flex-row flex-wrap col-span-5 m-auto p-2 gap-2 md:gap-4 text-center justify-center items-center">
         {
             clients.map(
             ({data:{logoClass, logoSrc}})=>(
-                <div class="">
-                    <Image class={"w-24 "+logoClass} src={logoPaths[`/${logoSrc}`]()} alt="" />
+                <div class="max-w-24">
+                    <Image class={"w-24 md:w-24 "+logoClass} src={logoPaths[`/${logoSrc}`]()} alt="" />
                 </div>    
-                
                 )
             )
         }

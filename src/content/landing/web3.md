@@ -1,7 +1,8 @@
 ---
 
 subtitle: Passionate in latest blockchain technologies, we are active at hackathons
-metric: 3x ETHGlobal finalist
+metric: 3x
+metricText: ETHGlobal Finalist
 b2subtitle: Blockchain techstack
 b2content: Decentralized Identity & reputation systems, Account abstraction, Wallet Management, Agentic systems
 link: Github

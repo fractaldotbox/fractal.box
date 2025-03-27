@@ -4,6 +4,7 @@ import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 import logoBowtie from "../assets/logo_bowtie.jpg";
 import * as TeamProfile from "../content/landing/team-profile.md";
+import * as Testimonial from "../content/landing/testimonial.md";
 import Member from "./Member.astro";
 
 const teamCompanies = await getCollection("teamCompany").then((collection) =>
@@ -37,17 +38,21 @@ const logoPaths = import.meta.glob<{ default: ImageMetadata }>(
         </div>
         
         <div>
-            <div class="flex flex-row  col-span-5 m-auto p-2  gap-4 text-center justify-center items-center">
+            <div class="flex flex-row flex-wrap col-span-5 m-auto p-2  gap-4 text-center justify-center items-center">
                 {
                     teamCompanies.map(
                         ({data:{logoClass, logoSrc}})=>(
-                        <div class="flex flex-row">
+                        <div class="flex flex-row max-w-24">
                             <Image class={"w-24 "+logoClass} src={logoPaths[`/${logoSrc}`]()} alt="" />
                         </div>    
                 )
             )
                 }
             </div>    
+            <div>
+                <Testimonial.Content />
+
+            </div>
         </div>
 
 </div>

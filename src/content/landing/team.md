@@ -1,7 +1,8 @@
 ---
 
 subtitle: Web2 experiences
-metric: 12yr+ experience
+metric: 12+
+metricText: years of experience
 b2subtitle: Projects
 b2content: AI agent swarm, RAG, DevSecOps improvements, marketplace pricing engine  
 b3subtitle: Typical Techstack
