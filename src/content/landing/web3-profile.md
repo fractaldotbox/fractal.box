@@ -1,5 +1,5 @@
 Some ideas keep us awake and hacking, such as DataDAOs and AI governance ([Ethereum Localization Services](https://ethglobal.com/showcase/ethereuml10nservice-v65cs)), orchestrating agent swarm [(CivAI)](https://ethglobal.com/showcase/civ-ai-miwn2)
-and autonomous websites ([Geist](https://ethglobal.com/showcase/geist-x3fur)), we're proud to have received $30k+ prizes.
+and autonomous websites ([Geist](https://ethglobal.com/showcase/geist-x3fur)), we're proud to have received numerous prizes.
 
 Yes, we ship as quick as 36 hours.
 

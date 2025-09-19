@@ -1,14 +1,14 @@
 ---
 import { Image } from "astro:assets";
 
-const { name, title, avatar } = Astro.props;
+const { name, title, avatar, url } = Astro.props;
 
 const avatarPaths = import.meta.glob<{ default: ImageMetadata }>(
 	"/src/assets/avatar*.{jpeg,jpg,png,gif,svg}",
 );
 ---
 
-
+<a href={url} target="_blank" style="text-decoration: none;">
 <div>
         <div class="flex w-full  justify-center items-center">
                 <Image alt={name} class="w-24 h-24 rounded-full" src={avatarPaths[`/${avatar}`]()}  />
@@ -23,3 +23,4 @@ const avatarPaths = import.meta.glob<{ default: ImageMetadata }>(
         </div>
 
 </div>
+</a>
